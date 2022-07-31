@@ -8,7 +8,7 @@ public class JDBCConnection {
     public static Connection getConnection() throws Exception{
         Properties info = new Properties();
         info.setProperty("user", "root");
-        info.setProperty("password", "Huvi@2015");
+        info.setProperty("password", "********");
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(url,info);
     }
